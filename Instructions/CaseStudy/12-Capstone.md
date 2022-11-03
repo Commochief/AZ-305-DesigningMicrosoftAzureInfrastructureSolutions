@@ -27,3 +27,5 @@ Of the files uploaded to the static file store, 33% require PKI encryption. Assu
 Every action that changes infrastructure configuration or alters infrastructure state is logged through a Customer Cloud logging service (assume there are 20 such actions a day). Additionally, every data action taken for the managed data services is also logged through the same Customer Cloud service. The infrastructure components running this application are continuously monitored through a Customer Cloud service offering for performance degradation, which sends out an email alert if defined thresholds are exceeded for any infrastructure performance metrics. Additionally, there are 50 separate custom application metrics being monitored.
 
 All virtual machines and app services should be monitored by a common Security Operations Center utilizing a cloud native SIEM/SOAR. The audit logs are required to be retained for one year and should be used for threat analysis and historical modeling of activities.
+
+All current servers are part of an on-premises Active Directory instance. Assume that this will be moved to the cloud before this migration occurs.
